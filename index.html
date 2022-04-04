@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Survey form</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+	<div id="main">
+  <header>
+    <h1 id="title">A Survey</h1>
+    <p id="description">This is my survey. There are many like it, but this one is mine. My survey is pretty neat. I'm kind of proud. I must master it as I must master my pizza-making skills. I must make my survey really cool. I must ask more thorough questions than my
+      friend who is also trying to survey people. I must survey the world before he surveys the world.</p>
+  </header>
+  <form id="survey-form" action="">
+    <div class="left-tab">
+      <label for="name" id="name-label">*Name:</label>
+    </div>
+    <div class="right-tab">
+      <input type="text" id="name" class="input-box" placeholder="Enter your name" required>
+    </div>
+    <div class="left-tab">
+      <label for="email" id="email-label">*Email:</label>
+    </div>
+    <div class="right-tab">
+      <input type="email" id="email" class="input-box" placeholder="Enter your email" required>
+    </div>
+    <div class="left-tab">
+      <label for="number" id="number-label">*Age:</label>
+    </div>
+    <div class="right-tab">
+      <input type="number" id="number" class="input-box" placeholder="Age please" min="1" max="125">
+    </div>
+    <!--dropdown menu -->
+    <div class="left-tab">
+      <label for="dropdown">Do you like answering surveys? </label>
+    </div>
+    <div class="right-tab">
+      <select id="dropdown" class="input-box">
+        <option disabled selected value>Select an option</option>
+      <option value="yes">Yes</option>
+      <option value="no">No</option>
+      <option value="sometimes">Sometimes</option>
+      <option value="no">When my cat is out</option>        
+    </select>
+    </div>
+    <!--radio button group -->
+    <div class="left-tab">
+      <label for="radio-group">Do you like the desription?</label>
+    </div>
+    <div class="right-tab">
+      <ul>
+        <li class="radio-buttons"><label><input type="radio" name="radio-group" value="yes">Loving it</label></li>
+        <li class="radio-buttons"><label><input type="radio" name="radio-group" value="no">Not particularly</label></li>
+        <li class="radio-buttons"><label><input type="radio" name="radio-group" value="other">Wasn't paying attention</label></li>
+      </ul>
+    </div>
+    <!-- checkboxes -->
+    <div class="left-tab">
+      <label for="checkboxes">Craving for?</label>
+    </div>
+    <div class="right-tab">
+      <ul>
+        <li class="checkboxes"><label><input  type="checkbox" value="pizza">Pizza</label></li>
+        <li class="checkboxes"><label><input type="checkbox" value="burger">Hamburgers</label></li>
+        <li class="checkboxes"><label><input type="checkbox" value="spaghetti">Spaghetti</label></li>
+      </ul>
+    </div>
+    <div class="left-tab">
+      <label for="textarea">Your funniest dream?</label>
+    </div>
+    <div class="right-tab">
+      <textarea></textarea>
+    </div>
+    <div id="submit-div">
+    <button id="submit" type="submit">Submit</button>
+    </div>
+  </form>
+</div>
+  </body>
+</html>
