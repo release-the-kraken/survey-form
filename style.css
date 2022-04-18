@@ -63,7 +63,7 @@ label{
   color: #6bff6b;
   position: absolute;
   margin-top: 8px;
-  opacity: 1;
+  opacity: 0;
 }
 .error {
   color: #ff7c7c;
