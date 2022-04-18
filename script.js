@@ -11,7 +11,7 @@ let errorMessage = classes("error"),
     failureIcon = classes("failure-icon");
     
 let validateFormInput = (id, index, message) => {
-    if(id.value.trim() === ""){
+    if(id.value === ""){
         errorMessage[index].innerHTML = message;
         failureIcon[index].style.opacity = "1";
         successIcon[index].style.opacity = "0";
