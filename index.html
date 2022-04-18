@@ -6,6 +6,12 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Survey form</title>
     <link rel="stylesheet" href="style.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      crossorigin="anonymous"
+    />
+    
   </head>
   <body>
 	<div id="main">
@@ -16,22 +22,33 @@
   </header>
   <form id="survey-form" action="">
     <div class="left-tab">
-      <label for="name" id="name-label">*Name:</label>
+      <label for="name" id="name-label">Name:</label>
+      <i class="fas fa-user"></i>
     </div>
     <div class="right-tab">
-      <input type="text" id="name" class="input-box" placeholder="Enter your name" required>
+      <input type="text" id="name" class="input-box" placeholder="Enter your name" >
+      <i class="fas fa-exclamation-circle failure-icon"></i>
+      <i class="far fa-check-circle success-icon"></i>
+      <div class="error"></div>
     </div>
     <div class="left-tab">
-      <label for="email" id="email-label">*Email:</label>
+      <label for="email" id="email-label">Email:</label>
+      <i class="far fa-envelope"></i></i>
     </div>
     <div class="right-tab">
-      <input type="email" id="email" class="input-box" placeholder="Enter your email" required>
+      <input type="email" id="email" class="input-box" placeholder="Enter your email">
+      <i class="fas fa-exclamation-circle failure-icon"></i>
+      <i class="far fa-check-circle success-icon"></i>
+      <div class="error"></div>
     </div>
     <div class="left-tab">
-      <label for="number" id="number-label">*Age:</label>
+      <label for="number" id="number-label">Age:</label>
     </div>
     <div class="right-tab">
-      <input type="number" id="number" class="input-box" placeholder="Age please" min="1" max="125">
+      <input type="number" id="age" class="input-box" placeholder="Age please" min="1" max="125">
+      <i class="fas fa-exclamation-circle failure-icon"></i>
+      <i class="far fa-check-circle success-icon"></i>
+      <div class="error"></div>
     </div>
     <!--dropdown menu -->
     <div class="left-tab">
@@ -79,5 +96,6 @@
     </div>
   </form>
 </div>
+<script type="text/javascript" src="script.js"></script>
   </body>
 </html>
